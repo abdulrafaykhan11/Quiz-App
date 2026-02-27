@@ -63,11 +63,13 @@ body {
 }
 
 /* List Group Styling */
-.list-group {
+.list-group,
+.list-group2 {
     margin-bottom: 25px;
 }
 
-.list-group li {
+.list-group li,
+.list-group2 li {
     background: #f8f9fa;
     border: 2px solid #eee;
     margin-bottom: 10px;
@@ -79,7 +81,8 @@ body {
     font-weight: 400;
 }
 
-.list-group li:hover {
+.list-group li:hover,
+.list-group2 li:hover {
     background: #e9ecef;
     border-color: #764ba2;
     padding-left: 30px; /* Thora sa slide effect */
