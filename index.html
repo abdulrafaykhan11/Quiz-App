@@ -10,64 +10,86 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main-container">
-        <h1>Quiz App</h1>
+    <div class="main-container" data-aos="fade-down" data-aos-duration="900">
+        <h1 class="text-center">Quiz App <br>By: ABDUL RAFAY</h1>
         <div class="score-container">
             <p>Score: <span id="score">0</span></p>
         </div>
     </div>
     <div class="container">
-        <div class="quiz-container quiz-container1">
+        <div class="quiz-container quiz-container1" data-aos="zoom-in-up" data-aos-duration="900">
             <h2>Question 1</h2>
             <p>What is the capital of France?</p>
             <ul class="list-group list-group1">
-                <li class="ans1">Paris</li>
                 <li class="ans2">London</li>
+                <li class="ans1 right">Paris</li>
                 <li class="ans3">Berlin</li>
             </ul>
-            <button class="btn btn-primary">Next</button>
+            <button class="btn no1 btn-primary">Next</button>
         </div>
-        <div class="quiz-container quiz-container2">
+        <div class="quiz-container quiz-container2 none" data-aos="zoom-in-up" data-aos-duration="900">
             <h2>Question 2</h2>
             <p>What is the capital of Germany?</p>
             <ul class="list-group list-group2">
-                <li>Berlin</li>
-                <li>London</li>
-                <li>Paris</li>
+                <li class="ans4 right">Berlin</li>
+                <li class="ans5">London</li>
+                <li class="ans6">Paris</li>
             </ul>
-            <button class="btn btn-primary">Next</button>
+            <button class="btn no2 btn-primary">Next</button>
         </div>
-        <div class="quiz-container quiz-container3">
+        <div class="quiz-container quiz-container3 none" data-aos="zoom-in-up" data-aos-duration="900">
             <h2>Question 3</h2>
             <p>What is the capital of Italy?</p>
             <ul class="list-group list-group3">
-                <li>Rome</li>
-                <li>London</li>
-                <li>Paris</li>
+                <li class="ans8">London</li>
+                <li class="ans7 right">Rome</li>
+                <li class="ans9">Paris</li>
             </ul>
-            <button class="btn btn-primary">Next</button>
+            <button class="btn no3 btn-primary">Next</button>
         </div>
-        <div class="quiz-container quiz-container4">
+        <div class="quiz-container quiz-container4 none" data-aos="zoom-in-up" data-aos-duration="900">
             <h2>Question 4</h2>
             <p>What is the capital of Spain?</p>
             <ul class="list-group list-group4">
-                <li>Madrid</li>
-                <li>London</li>
-                <li>Paris</li>
+                <li class="ans11">London</li>
+                <li class="ans12">Paris</li>
+                <li class="ans10 right">Madrid</li>
             </ul>
-            <button class="btn btn-primary">Next</button>
+            <button class="btn no4 btn-primary">Next</button>
         </div>
-        <div class="quiz-container quiz-container5">
+        <div class="quiz-container quiz-container5 none" data-aos="zoom-in-up" data-aos-duration="900">
             <h2>Question 5</h2>
             <p>What is the capital of Portugal?</p>
             <ul class="list-group list-group5">
-                <li>Lisbon</li>
-                <li>London</li>
-                <li>Paris</li>
+                <li class="ans14">London</li>
+                <li class="ans13 right">Lisbon</li>
+                <li class="ans15">Paris</li>
             </ul>
-            <button class="btn btn-primary">Next</button>
+            <button class="btn no5 btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
         </div>
     </div>
+<!-- Modal -->
+<div class="modal fade premium-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Result</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="result-wrap">
+            <div class="result-score"><span id="finalScore">0</span><small>/5</small></div>
+            <p id="scoreMessage">Your result will appear here.</p>
+            <div class="result-line"></div>
+            <p class="result-note">Keep practicing to reach the perfect score.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
