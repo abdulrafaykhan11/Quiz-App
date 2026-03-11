@@ -23,143 +23,164 @@ let ans14 = document.querySelector(".ans14");
 let ans15 = document.querySelector(".ans15");
 // ! CONTAINERS
 let quiz1 = document.querySelector(".quiz-container1");
-let quiz2 = document.querySelector(".quiz-container2")
-let quiz3 = document.querySelector(".quiz-container3")
-let quiz4 = document.querySelector(".quiz-container4")
-let quiz5 = document.querySelector(".quiz-container5")
+let quiz2 = document.querySelector(".quiz-container2");
+let quiz3 = document.querySelector(".quiz-container3");
+let quiz4 = document.querySelector(".quiz-container4");
+let quiz5 = document.querySelector(".quiz-container5");
 // ! LI'S
 let list1 = document.querySelectorAll(".list-group1 li");
-let c1 = document.querySelector(".list-group1")
-let list2 = document.querySelectorAll(".list-group2 li")
-let c2 = document.querySelector(".list-group2")
-let list3 = document.querySelectorAll(".list-group3 li")
-let c3 = document.querySelector(".list-group3")
-let list4 = document.querySelectorAll(".list-group4 li")
-let c4 = document.querySelector(".list-group4")
-let list5 = document.querySelectorAll(".list-group5 li")
-let c5 = document.querySelector(".list-group5")
-let modalTtile = document.querySelector(".modal-title")
-let modalMsg = document.querySelector("#scoreMessage")
-let finalScore = document.querySelector("#finalScore")
+let c1 = document.querySelector(".list-group1");
+let list2 = document.querySelectorAll(".list-group2 li");
+let c2 = document.querySelector(".list-group2");
+let list3 = document.querySelectorAll(".list-group3 li");
+let c3 = document.querySelector(".list-group3");
+let list4 = document.querySelectorAll(".list-group4 li");
+let c4 = document.querySelector(".list-group4");
+let list5 = document.querySelectorAll(".list-group5 li");
+let c5 = document.querySelector(".list-group5");
+let modalTtile = document.querySelector(".modal-title");
+let modalMsg = document.querySelector("#scoreMessage");
+let finalScore = document.querySelector("#finalScore");
 let s = 0;
 
 list1.forEach((li) => {
-    li.addEventListener("click" , () => {
-        if(li.classList.contains("right")){
-            li.classList.add("green")
-            c1.classList.add("none")
-            s++
-            score.textContent = s
-        }
-        else{
-            li.classList.add("red")
-            c1.classList.add("none")
-            s--
-            score.textContent = s
-        }
-    })
-})
+  li.addEventListener("click", () => {
+    if (li.classList.contains("right")) {
+      li.classList.add("green");
+      c1.classList.add("none");
+      s++;
+      score.textContent = s;
+    } else {
+      li.classList.add("red");
+      c1.classList.add("none");
+      s--;
+      score.textContent = s;
+    }
+  });
+});
 list2.forEach((li) => {
-    li.addEventListener("click" , () => {
-        if(li.classList.contains("right")){
-            li.classList.add("green")
-            c2.classList.add("none")
-            s++
-            score.textContent = s
-        }
-        else{
-            li.classList.add("red")
-            c2.classList.add("none")
-            s--
-            score.textContent = s
-        }
-    })
-})
+  li.addEventListener("click", () => {
+    if (li.classList.contains("right")) {
+      li.classList.add("green");
+      c2.classList.add("none");
+      s++;
+      score.textContent = s;
+    } else {
+      li.classList.add("red");
+      c2.classList.add("none");
+      s--;
+      score.textContent = s;
+    }
+  });
+});
 list3.forEach((li) => {
-    li.addEventListener("click" , () => {
-        if(li.classList.contains("right")){
-            li.classList.add("green")
-            c3.classList.add("none")
-            s++
-            score.textContent = s
-        }
-        else{
-            li.classList.add("red")
-            c3.classList.add("none")
-            s--
-            score.textContent = s
-        }
-    })
-})
+  li.addEventListener("click", () => {
+    if (li.classList.contains("right")) {
+      li.classList.add("green");
+      c3.classList.add("none");
+      s++;
+      score.textContent = s;
+    } else {
+      li.classList.add("red");
+      c3.classList.add("none");
+      s--;
+      score.textContent = s;
+    }
+  });
+});
 list4.forEach((li) => {
-    li.addEventListener("click" , () => {
-        if(li.classList.contains("right")){
-            li.classList.add("green")
-            c4.classList.add("none")
-            s++
-            score.textContent = s
-        }
-        else{
-            li.classList.add("red")
-            c4.classList.add("none")
-            s--
-            score.textContent = s
-        }
-    })
-})
+  li.addEventListener("click", () => {
+    if (li.classList.contains("right")) {
+      li.classList.add("green");
+      c4.classList.add("none");
+      s++;
+      score.textContent = s;
+    } else {
+      li.classList.add("red");
+      c4.classList.add("none");
+      s--;
+      score.textContent = s;
+    }
+  });
+});
 list5.forEach((li) => {
-    li.addEventListener("click" , () => {
-        if(li.classList.contains("right")){
-            li.classList.add("green")
-            c5.classList.add("none")
-            s++
-            score.textContent = s
-        }
-        else{
-            li.classList.add("red")
-            c5.classList.add("none")
-            s--
-            score.textContent = s
-        }
-    })
-})
+  li.addEventListener("click", () => {
+    if (li.classList.contains("right")) {
+      li.classList.add("green");
+      c5.classList.add("none");
+      s++;
+      score.textContent = s;
+    } else {
+      li.classList.add("red");
+      c5.classList.add("none");
+      s--;
+      score.textContent = s;
+    }
+  });
+});
 
-btn1.addEventListener("click" , () => {
-    quiz1.classList.add("none")
-    quiz2.classList.remove("none")
-})
-btn2.addEventListener("click" , () => {
-    quiz2.classList.add("none")
-    quiz3.classList.remove("none")
-})
-btn3.addEventListener("click" , () => {
-    quiz3.classList.add("none")
-    quiz4.classList.remove("none")
-})
-btn4.addEventListener("click" , () => {
-    quiz4.classList.add("none")
-    quiz5.classList.remove("none")
-})
-btn5.addEventListener("click" , () => {
-    quiz5.classList.add("none")
-    finalScore.textContent = score.textContent
-    let final = Number(score.textContent)
-    if(final >= 5){
-        modalMsg.textContent = "Perfect score. Luxury-level performance."
-    }
-    else if(final === 4){
-        modalMsg.textContent = "Excellent result. Almost flawless."
-    }
-    else if(final === 3){
-        modalMsg.textContent = "Good job. A little more practice and you are elite."
-    }
-    else if(final === 2){
-        modalMsg.textContent = "Decent start. Keep pushing for a premium score."
-    }
-    else if(final === 1){
-        modalMsg.textContent = "You can do better. Try again and level up."
-    }
-    else{
-        modalMsg.textContent = "Tough round. Reset and go for the win."
-    }
-})
+btn1.addEventListener("click", () => {
+  quiz1.classList.add("none");
+  quiz2.classList.remove("none");
+});
+btn2.addEventListener("click", () => {
+  quiz2.classList.add("none");
+  quiz3.classList.remove("none");
+});
+btn3.addEventListener("click", () => {
+  quiz3.classList.add("none");
+  quiz4.classList.remove("none");
+});
+btn4.addEventListener("click", () => {
+  quiz4.classList.add("none");
+  quiz5.classList.remove("none");
+});
+btn5.addEventListener("click", () => {
+  quiz5.classList.add("none");
+  finalScore.textContent = score.textContent;
+  let final = Number(score.textContent);
+  if (final >= 5) {
+    modalMsg.textContent = "Perfect score. Luxury-level performance.";
+  } else if (final === 4) {
+    modalMsg.textContent = "Excellent result. Almost flawless.";
+  } else if (final === 3) {
+    modalMsg.textContent =
+      "Good job. A little more practice and you are elite.";
+  } else if (final === 2) {
+    modalMsg.textContent = "Decent start. Keep pushing for a premium score.";
+  } else if (final === 1) {
+    modalMsg.textContent = "You can do better. Try again and level up.";
+  } else {
+    modalMsg.textContent = "Tough round. Reset and go for the win.";
+  }
+});
+
+let restartBtn = document.querySelector(".restart-btn");
+let restartContainer = document.querySelector(".restart-container");
+
+const myModalEl = document.getElementById("exampleModal");
+if (myModalEl) {
+  myModalEl.addEventListener("hidden.bs.modal", (event) => {
+    restartContainer.classList.remove("none");
+  });
+}
+
+restartBtn.addEventListener("click", () => {
+  s = 0;
+  score.textContent = s;
+  finalScore.textContent = s;
+
+  let allLis = document.querySelectorAll(".list-group li");
+  allLis.forEach((li) => {
+    li.classList.remove("green", "red");
+  });
+
+  c1.classList.remove("none");
+  c2.classList.remove("none");
+  c3.classList.remove("none");
+  c4.classList.remove("none");
+  c5.classList.remove("none");
+
+  restartContainer.classList.add("none");
+  quiz1.classList.remove("none");
+});

@@ -1,100 +1,265 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main-container" data-aos="fade-down" data-aos-duration="900">
-        <h1 class="text-center">Quiz App <br>By: ABDUL RAFAY</h1>
-        <div class="score-container">
-            <p>Score: <span id="score">0</span></p>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Quiz App</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
     </div>
-    <div class="container">
-        <div class="quiz-container quiz-container1" data-aos="zoom-in-up" data-aos-duration="900">
-            <h2>Question 1</h2>
-            <p>What is the capital of France?</p>
+
+    <!-- Floating Score Badge -->
+    <div class="score-container glass-panel">
+      <div class="score-icon"><i class="fa-solid fa-trophy"></i></div>
+      <div class="score-text">
+        <span>Score</span>
+        <span id="score" class="score-value">0</span>
+      </div>
+    </div>
+
+    <div class="app-wrapper">
+      <div class="main-container" data-aos="fade-down" data-aos-duration="1000">
+        <h1 class="glow-text">Master Quiz</h1>
+        <p class="subtitle">Developed by Abdul Rafay</p>
+      </div>
+
+      <div class="container custom-container">
+        <!-- Question 1 -->
+        <div
+          class="quiz-container quiz-container1 glass-card"
+          data-aos="zoom-in-up"
+          data-aos-duration="900"
+        >
+          <div class="quiz-header">
+            <span class="q-badge">Question 1 of 5</span>
+            <h2>Geography</h2>
+          </div>
+          <p class="question-text">What is the capital of France?</p>
+          <div class="options-wrapper">
             <ul class="list-group list-group1">
-                <li class="ans2">London</li>
-                <li class="ans1 right">Paris</li>
-                <li class="ans3">Berlin</li>
+              <li class="ans2"><span class="opt-letter">A</span>London</li>
+              <li class="ans1 right"><span class="opt-letter">B</span>Paris</li>
+              <li class="ans3"><span class="opt-letter">C</span>Berlin</li>
             </ul>
-            <button class="btn no1 btn-primary">Next</button>
+          </div>
+          <button class="btn no1 premium-btn mt-4">
+            <span>Next Question <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
         </div>
-        <div class="quiz-container quiz-container2 none" data-aos="zoom-in-up" data-aos-duration="900">
-            <h2>Question 2</h2>
-            <p>What is the capital of Germany?</p>
+
+        <!-- Question 2 -->
+        <div
+          class="quiz-container quiz-container2 none glass-card"
+          data-aos="zoom-in-up"
+          data-aos-duration="900"
+        >
+          <div class="quiz-header">
+            <span class="q-badge">Question 2 of 5</span>
+            <h2>Geography</h2>
+          </div>
+          <p class="question-text">What is the capital of Germany?</p>
+          <div class="options-wrapper">
             <ul class="list-group list-group2">
-                <li class="ans4 right">Berlin</li>
-                <li class="ans5">London</li>
-                <li class="ans6">Paris</li>
+              <li class="ans4 right">
+                <span class="opt-letter">A</span>Berlin
+              </li>
+              <li class="ans5"><span class="opt-letter">B</span>London</li>
+              <li class="ans6"><span class="opt-letter">C</span>Paris</li>
             </ul>
-            <button class="btn no2 btn-primary">Next</button>
+          </div>
+          <button class="btn no2 premium-btn mt-4">
+            <span>Next Question <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
         </div>
-        <div class="quiz-container quiz-container3 none" data-aos="zoom-in-up" data-aos-duration="900">
-            <h2>Question 3</h2>
-            <p>What is the capital of Italy?</p>
+
+        <!-- Question 3 -->
+        <div
+          class="quiz-container quiz-container3 none glass-card"
+          data-aos="zoom-in-up"
+          data-aos-duration="900"
+        >
+          <div class="quiz-header">
+            <span class="q-badge">Question 3 of 5</span>
+            <h2>Geography</h2>
+          </div>
+          <p class="question-text">What is the capital of Italy?</p>
+          <div class="options-wrapper">
             <ul class="list-group list-group3">
-                <li class="ans8">London</li>
-                <li class="ans7 right">Rome</li>
-                <li class="ans9">Paris</li>
+              <li class="ans8"><span class="opt-letter">A</span>London</li>
+              <li class="ans7 right"><span class="opt-letter">B</span>Rome</li>
+              <li class="ans9"><span class="opt-letter">C</span>Paris</li>
             </ul>
-            <button class="btn no3 btn-primary">Next</button>
+          </div>
+          <button class="btn no3 premium-btn mt-4">
+            <span>Next Question <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
         </div>
-        <div class="quiz-container quiz-container4 none" data-aos="zoom-in-up" data-aos-duration="900">
-            <h2>Question 4</h2>
-            <p>What is the capital of Spain?</p>
+
+        <!-- Question 4 -->
+        <div
+          class="quiz-container quiz-container4 none glass-card"
+          data-aos="zoom-in-up"
+          data-aos-duration="900"
+        >
+          <div class="quiz-header">
+            <span class="q-badge">Question 4 of 5</span>
+            <h2>Geography</h2>
+          </div>
+          <p class="question-text">What is the capital of Spain?</p>
+          <div class="options-wrapper">
             <ul class="list-group list-group4">
-                <li class="ans11">London</li>
-                <li class="ans12">Paris</li>
-                <li class="ans10 right">Madrid</li>
+              <li class="ans11"><span class="opt-letter">A</span>London</li>
+              <li class="ans12"><span class="opt-letter">B</span>Paris</li>
+              <li class="ans10 right">
+                <span class="opt-letter">C</span>Madrid
+              </li>
             </ul>
-            <button class="btn no4 btn-primary">Next</button>
+          </div>
+          <button class="btn no4 premium-btn mt-4">
+            <span>Next Question <i class="fa-solid fa-arrow-right"></i></span>
+          </button>
         </div>
-        <div class="quiz-container quiz-container5 none" data-aos="zoom-in-up" data-aos-duration="900">
-            <h2>Question 5</h2>
-            <p>What is the capital of Portugal?</p>
+
+        <!-- Question 5 -->
+        <div
+          class="quiz-container quiz-container5 none glass-card"
+          data-aos="zoom-in-up"
+          data-aos-duration="900"
+        >
+          <div class="quiz-header">
+            <span class="q-badge">Question 5 of 5</span>
+            <h2>Geography</h2>
+          </div>
+          <p class="question-text">What is the capital of Portugal?</p>
+          <div class="options-wrapper">
             <ul class="list-group list-group5">
-                <li class="ans14">London</li>
-                <li class="ans13 right">Lisbon</li>
-                <li class="ans15">Paris</li>
+              <li class="ans14"><span class="opt-letter">A</span>London</li>
+              <li class="ans13 right">
+                <span class="opt-letter">B</span>Lisbon
+              </li>
+              <li class="ans15"><span class="opt-letter">C</span>Paris</li>
             </ul>
-            <button class="btn no5 btn-primary"data-bs-toggle="modal" data-bs-target="#exampleModal">Next</button>
+          </div>
+          <button
+            class="btn no5 premium-btn mt-4"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <span>View Results <i class="fa-solid fa-flag-checkered"></i></span>
+          </button>
         </div>
-    </div>
-<!-- Modal -->
-<div class="modal fade premium-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Result</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="result-wrap">
-            <div class="result-score"><span id="finalScore">0</span><small>/5</small></div>
-            <p id="scoreMessage">Your result will appear here.</p>
-            <div class="result-line"></div>
-            <p class="result-note">Keep practicing to reach the perfect score.</p>
+
+        <!-- Restart Section -->
+        <div
+          class="restart-container none glass-card text-center"
+          style="padding: 40px"
+        >
+          <h2
+            class="mb-4"
+            style="
+              color: var(--text-primary);
+              font-size: 1.8rem;
+              font-weight: 700;
+            "
+          >
+            Quiz Completed
+          </h2>
+          <button
+            class="btn restart-btn premium-btn mx-auto"
+            style="max-width: 300px"
+          >
+            <span>Restart Again <i class="fa-solid fa-rotate-right"></i></span>
+          </button>
         </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content premium-modal-content">
+          <div class="modal-header border-0 pb-0">
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-center pt-0">
+            <div class="result-wrap">
+              <div class="result-icon mb-3">
+                <i class="fa-solid fa-crown"></i>
+              </div>
+              <h2 class="result-title mb-4">Quiz Completed!</h2>
+              <div class="score-circle mx-auto mb-4">
+                <div class="result-score">
+                  <span id="finalScore">0</span
+                  ><span class="total-score">/5</span>
+                </div>
+              </div>
+              <div class="result-message-box">
+                <p id="scoreMessage" class="mb-0">
+                  Your result will appear here.
+                </p>
+              </div>
+              <div class="result-line mt-4 mb-3"></div>
+              <p class="result-note">
+                <i class="fa-solid fa-bolt me-2"></i>Keep practicing to reach
+                the perfect score.
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer border-0 justify-content-center pt-0 pb-4">
+            <button
+              type="button"
+              class="btn premium-btn-outline"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="script.js"></script>
-<script>
-  AOS.init();
-</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        offset: 50,
+      });
+    </script>
+  </body>
 </html>
